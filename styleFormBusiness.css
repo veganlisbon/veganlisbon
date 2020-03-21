@@ -1,0 +1,27 @@
+.checkbox, .radio{
+    padding-left: 2.5rem;;
+}
+
+label{
+    margin-bottom: 0;   
+}
+
+input, select, #checkboxDiv, #radioDiv{
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 0.3rem;
+}
+
+#otherFeatures{
+    margin-top: -15px;
+}
+
+#formName p{
+    margin-bottom: 2rem;
+}
+
+#submitButton{
+    margin-top: 1rem;
+}

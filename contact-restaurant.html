@@ -1,41 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vegan Lisbon is the place for vegan and vegetarian culture in the portuguese capital.
-    We provide the best spots in town for food, drinks and shopping. It’s a digital platform to gather this vegan & vegetarian lovers to be part of this community & culture. We will also show special events, so let’s make it short: 
-    the perfect vegan & vegetarian Lisbon guide.">     
-    <meta name="keywords" content="vegan, vegetarian, veggie, lisbon, lisboa, LX, portugal, ">     
-    <meta name="author" content="Filipa Marta, Fernanda Abbud, Arnaud Duhé">
-    <title>Contact - Restaurant - Vegan Lisbon</title>
-    <!-- normalize css -->
-    <link rel=“stylesheet” href=“normalize.css” >
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
-    <!-- bootstrap css -->
-    <link rel=“stylesheet” href=“https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css” integrity=“sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh” crossorigin=“anonymous”>
-    <!-- css own -->
-    <link rel=“stylesheet” href=“style.css”>
-    <!-- script jquery -->
-    <script src=“https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js”></script>
-    <!-- bootstrap script -->
-    <script src=“https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=“sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=“anonymous”></script>
-    <script src=“https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js” integrity=“sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6” crossorigin=“anonymous”></script>
-    <!-- script own -->
-    <script type=“text/javascript” src=“script.js”></script>
-    <link rel="stylesheet" href="style.css">
-    <!-- script jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- bootstrap script -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- script own -->
-    <script type="text/javascript" src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vegan Lisbon is the place for vegan and vegetarian culture in the portuguese capital.
+  We provide the best spots in town for food, drinks and shopping. It’s a digital platform to gather this vegan & vegetarian lovers to be part of this community & culture. We will also show special events, so let’s make it short: 
+  the perfect vegan & vegetarian Lisbon guide.">     
+  <meta name="keywords" content="vegan, vegetarian, veggie, lisbon, lisboa, LX, portugal, ">     
+  <meta name="author" content="Filipa Marta, Fernanda Abbud, Arnaud Duhé">
+  <title>Contact - Business - Vegan Lisbon</title>
+  <!-- normalize css -->
+  <link rel="stylesheet" href="normalize.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- css own -->
+  <link rel="stylesheet" href="styleFormBusiness.css">
 </head>
-
 <body>
-    
+  <form>
+    <div class="container">
+      <div class="row">
+        <div id="formName" class="col-lg-12">
+          <h1 class="h1">Contact form - Business</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan a ante a volutpat. Mauris vitae efficitur magna. Integer finibus ornare tortor quis suscipit. Nulla facilisi. Nam semper sapien eu orci gravida, at congue mauris rutrum. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <label for="name">Name: </label>
+          <input type="text" name='name' id='name' placeholder="your name" class="form-control form-control-sm">
+        </div>
+        <div class="col-lg-6">
+          <label for="email">e-mail: </label>
+          <input type="email" name="email" id="email" placeholder="name@email.com" class="form-control form-control-sm">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <label for="kindOfBusiness">What kind of business you have?</label>
+          <select id="kindOfBusiness" class="custom-select custom-select-sm">
+            <option value="select" selected disabled>select your business</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Bar">Bar</option>
+            <option value="Store">Store</option>
+            <option value="Event">Event Production</option>
+            <option value="Business">Other</option>
+          </select>
+        </div>
+        <div class="col-lg-6">
+          <label id="nameBusiness" for="business"> Name of business: </label>
+          <input type="text" name="business" id="business" placeholder="name of your business" class="form-control form-control-sm">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Check all the features that applies to your business:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="custom-control custom-checkbox col-lg-3 checkbox">
+          <input type="checkbox" name="vegan" id="vegan" class="custom-control-input">
+          <label for="vegan" class="custom-control-label">Vegan</label>
+        </div>
+        <div class="custom-control custom-checkbox col-lg-3 checkbox">
+          <input type="checkbox" name="vegetarian" id="vegetarian" class="custom-control-input">
+          <label for="vegetarian" class="custom-control-label">Vegetarian</label>
+        </div>
+        <div class="custom-control custom-checkbox col-lg-3 checkbox">
+          <input type="checkbox" name="veganOnly" id="veganOnly" class="custom-control-input">
+          <label for="veganOnly" class="custom-control-label">Vegan only</label>
+        </div>
+        <div class="custom-control custom-checkbox col-lg-3 checkbox">
+          <input type="checkbox" name="delivery" id="delivery" class="custom-control-input">
+          <label for="delivery" class="custom-control-label">Delivery</label>
+        </div>
+      </div>
+      <div id="checkboxDiv" class="row">
+        <div class="custom-control custom-checkbox col-lg-3 checkbox">
+          <input type="checkbox" name="organic" id="organic" class="custom-control-input">
+          <label for="organic" class="custom-control-label">Organic</label>
+        </div>
+        <div class="custom-control custom-checkbox col-lg-3 checkbox">
+          <input type="checkbox" name="wifi" id="wifi" class="custom-control-input">
+          <label for="wifi" class="custom-control-label">Wifi</label>
+        </div>
+        <div class="custom-control custom-checkbox col-lg-3 checkbox">
+          <input type="checkbox" name="petFriendly" id="petFriendly" class="custom-control-input">
+          <label for="petFriendly" class="custom-control-label">Pet Friendly</label>
+        </div>
+        <div class="custom-control custom-checkbox col-lg-3 checkbox">
+          <input type="checkbox" name="laptopFriendly" id="laptopFriendly" class="custom-control-input">
+          <label for="laptopFriendly" class="custom-control-label">Laptop Friendly</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" id="otherFeatures">    
+          <label for="other">Outros: </label>
+          <input type="text" name="other" id="other" class="form-control form-control-sm" placeholder="other features">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Select average price range:</p>
+        </div>
+      </div>
+      <div class="row" id="radioDiv">
+        <div class="col-lg-3 custom-control custom-radio radio">
+          <input type="radio" name="priceRange" id="level1" class="custom-control-input">
+          <label class="custom-control-label" for="level1">€: up to €7</label>
+        </div>
+        <div class="col-lg-3 custom-control custom-radio radio">
+          <input type="radio" name="priceRange" id="level2" class="custom-control-input">
+          <label class="custom-control-label" for="level2">€€: up to €80</label>
+        </div>
+        <div class="col-lg-3 custom-control custom-radio radio">
+          <input type="radio" name="priceRange" id="level3" class="custom-control-input">
+          <label class="custom-control-label" for="level3">€€€: up to €150</label>
+        </div>
+        <div class="col-lg-3 custom-control custom-radio radio">
+          <input type="radio" name="priceRange" id="level4" class="custom-control-input">
+          <label class="custom-control-label" for="level4">€€€€: above €150</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Subject:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <select id="subject" class="custom-select custom-select-sm">
+            <option value="selectSubject" selected disabled>Select the subject</option>
+            <option value="add">Add business to Vegan Lisbon</option>
+            <option value="update">Update information of your business</option>
+            <option value="other1">other1</option>
+            <option value="other2">other2</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <label for="comments">Comments:</label>
+        </div>
+        <div class="col-lg-12">
+          <textarea id="comments" rows="10" cols="70" placeholder="write your message here" class="form-control"></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
+    </div>
+  </form>
+  <!-- script jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- script own -->
+  <script type="text/javascript" src="scriptFormBusiness.js"></script>
 </body>
 </html>
