@@ -13,7 +13,7 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="normalize.css">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -36,92 +36,207 @@
 </head>
 
 <body class="food-category">
-    
+
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="filter-wrapper">
-                    <div class="form-check form-check-inline">
+                <ul class="filter-wrapper">
+                    <li class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Price</label>
+                    </li>
+                    <li class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Price</label>
+                    </li>
+                    <li class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Price</label>
+                    </li>
+                    <li class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">1</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="inlineCheckbox1">WiFi</label>
+                    </li>
+                    <li class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">2</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                        <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
-                    </div>
-                </div>
+                        <label class="form-check-label" for="inlineCheckbox2">Pet friendly</label>
+                    </li>
+                    <li class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Laptop Friendly</label>
+                    </li>
+                    <li class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Organic Food</label>
+                    </li>
+                    <li class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Pet friendly</label>
+                    </li>
+                    <li class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Home delivery</label>
+                    </li>
+                </ul>
                 <div class="grid-cards">
                     <div class="card-columns">
                         <div class="card">
-                            <img src="/img/food10.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title that wraps to a new line</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="card-img">
+                                <div class="discount"></div>
+                                <img src="img/food11.jpg" class="card-img-top" alt="restaurant">
                             </div>
-                        </div>
-                        <div class="card p-3">
-                            <blockquote class="blockquote mb-0 card-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                                </p>
-                                <footer class="blockquote-footer">
-                                    <small class="text-muted">
-                                        Someone famous in <cite title="Source Title">Source Title</cite>
-                                    </small>
-                                </footer>
-                            </blockquote>
-                        </div>
-                        <div class="card">
-                            <img src="img/food20.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card bg-primary text-white text-center p-3">
-                            <blockquote class="blockquote mb-0">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                                <footer class="blockquote-footer text-white">
-                                    <small>
-                                        Someone famous in <cite title="Source Title">Source Title</cite>
-                                    </small>
-                                </footer>
-                            </blockquote>
-                        </div>
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has a regular title and short paragraphy of text below
-                                    it.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title">Jardim dos Sentidos</h5>
+                                <p class="card-text">Avenida da Liberdade</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-hight.svg" alt="high price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="img/food12.jpg" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card p-3 text-right">
-                            <blockquote class="blockquote mb-0">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                                </p>
-                                <footer class="blockquote-footer">
-                                    <small class="text-muted">
-                                        Someone famous in <cite title="Source Title">Source Title</cite>
-                                    </small>
-                                </footer>
-                            </blockquote>
+                            <div class="card-img">
+                                <div class="discount"></div>
+                                <img src="img/food11.jpg" class="card-img-top" alt="restaurant">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jardim dos Sentidos</h5>
+                                <p class="card-text">Avenida da Liberdade</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-hight.svg" alt="high price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="card">
+                            <div class="card-img">
+                                <div class="discount"></div>
+                                <img src="img/food14.jpg" class="card-img-top" alt="restaurant">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is another card with title and supporting text below. This
-                                    card has some additional content to make it slightly taller overall.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h5 class="card-title">Jardim dos Sentidos</h5>
+                                <p class="card-text">Avenida da Liberdade</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-hight.svg" alt="high price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <div class="discount"></div>
+                                <img src="img/food15.jpg" class="card-img-top" alt="restaurant">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jardim dos Sentidos</h5>
+                                <p class="card-text">Avenida da Liberdade</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-hight.svg" alt="high price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <div class="discount"></div>
+                                <img src="img/food16.jpg" class="card-img-top" alt="restaurant">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jardim dos Sentidos</h5>
+                                <p class="card-text">Avenida da Liberdade</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-hight.svg" alt="high price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <div class="discount"></div>
+                                <img src="img/food17.jpg" class="card-img-top" alt="restaurant">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jardim dos Sentidos</h5>
+                                <p class="card-text">Avenida da Liberdade</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-hight.svg" alt="high price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/food10.jpg" class="card-img-top" alt="restaurant">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">O Botanista</h5>
+                                <p class="card-text">Cais do Sodré</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-medium.svg" alt="medium price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/food12.jpg" class="card-img-top" alt="restaurant">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Lisbon Vegan Restaurante</h5>
+                                <p class="card-text">Arroios</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-hight.svg" alt="high price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="img/food13.jpg" class="card-img-top" alt="restaurant">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jardim dos Sentidos</h5>
+                                <p class="card-text">Avenida da Liberdade</p>
+                                <ul class="card-icons">
+                                    <li><img src="img/euros-normal.svg" alt="normal price range" /></li>
+                                    <li><img src="img/pet.svg" alt="pet friendly" /></li>
+                                    <li><img src="img/wifi.svg" alt="place with wifi" /></li>
+                                    <li><img src="img/laptop-friendly.svg" alt="laptop friendly" /></li>
+                                    <li><img src="img/bio.svg" alt="Organic food" /></li>
+                                    <li><img src="img/delivery.svg" alt="Home delivery" /></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

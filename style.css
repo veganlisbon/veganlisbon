@@ -1,0 +1,87 @@
+.card {
+    border: 1px solid rgba(48, 226, 62, 0.31);
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.card:hover {
+    -webkit-box-shadow: 10px 10px 39px -25px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 39px -25px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 39px -25px rgba(0,0,0,0.75);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+
+
+.card .card-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.card .card-img img {
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+    position: relative;
+}
+
+.card .card-img img:before {
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(201,174,219);
+    background: linear-gradient(0deg, rgba(201,174,219,1) 0%, rgba(168,255,212,1) 100%);
+    z-index: 1;
+}
+
+.card-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    color: #47bf56;
+}
+
+.card:hover .card-body {
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(48, 226, 62, 0.31);
+}
+
+.card-icons {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    margin: 0 -5px;
+}
+
+.card-icons li {
+    height: 15px;
+    padding: 0 5px;
+}
+
+.card-icons img {
+    height: 100%;
+    display: block;
+}
