@@ -1,6 +1,11 @@
-.header-img {
- width: 100vw;
+header {
+    height: 100vh;
+    background-image: url("img/food11.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .homepage-nav a img {
     width: 100%;
