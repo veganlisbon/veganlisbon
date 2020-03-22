@@ -3,10 +3,53 @@ header {
     background-image: url("img/food11.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    opacity: .9;
 }
 
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+}
+
+header h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+
+}
+
+.col-lg-12 {
+    background-color: whitesmoke;
+    opacity: .8;
+    position: sticky;
+    top: 10px;
+}
+
+.homepage-nav{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.homepage-nav a {
+    color:whitesmoke;
+}
 
 .homepage-nav a img {
     width: 100%;
 }
+
+.homepage-nav col-lg-3 {
+    position: relative;
+}
+
+.homepage-nav a span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
