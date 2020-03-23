@@ -179,3 +179,18 @@
     }
 }
 
+
+
+/* Restaurant */
+.restaurant-category #restaurant-gallery {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.restaurant-category #restaurant-gallery .carousel-item,
+.restaurant-category #restaurant-gallery .carousel-inner,
+.restaurant-category #restaurant-gallery img  {
+    height: 100%;
+    object-fit: cover;
+}
