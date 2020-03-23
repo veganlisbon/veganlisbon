@@ -13,7 +13,9 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="normalize.css">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -36,48 +38,74 @@
 </head>
 
 <body class="food-category">
-
+    <header>
+        <div class="img-background"></div>
+        <h1>Wanna some <span>Food?</span></h1>
+    </header>
     <div class="container">
         <div class="row">
             <div class="col">
-                <ul class="filter-wrapper">
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">Price</label>
-                    </li>
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">Price</label>
-                    </li>
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">Price</label>
-                    </li>
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">WiFi</label>
-                    </li>
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">Pet friendly</label>
-                    </li>
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">Laptop Friendly</label>
-                    </li>
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label" for="inlineCheckbox1">Organic Food</label>
-                    </li>
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label" for="inlineCheckbox2">Pet friendly</label>
-                    </li>
-                    <li class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                        <label class="form-check-label" for="inlineCheckbox3">Home delivery</label>
-                    </li>
-                </ul>
+                <nav class="filter-menu">
+                    <p>Select your favourite restaurant:</p>
+                    <ul class="filter-wrapper">
+                        <li class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter1" value="option1">
+                            <label class="form-check-label" for="filter1">
+                                <span><img src="img/euros-normal.svg" alt="normal price range" /></span>
+                                Price
+                            </label>
+                        </li>
+                        <li class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter2" value="option2">
+                            <label class="form-check-label" for="filter2">
+                                <span><img src="img/euros-medium.svg" alt="medium price range" /></span>
+                                Price
+                            </label>
+                        </li>
+                        <li class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter3" value="option3">
+                            <label class="form-check-label" for="filter3">
+                                <span><img src="img/euros-hight.svg" alt="high price range" /></span>
+                                Price
+                            </label>
+                        </li>
+                        <li class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter4" value="option4">
+                            <label class="form-check-label" for="filter4">
+                                <span><img src="img/wifi.svg" alt="place with wifi" /></span>
+                                WiFi
+                            </label>
+                        </li>
+                        <li class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter5" value="option5">
+                            <label class="form-check-label" for="filter5">
+                                <span><img src="img/laptop-friendly.svg" alt="laptop friendly" /></span>
+                                Laptop Friendly
+                            </label>
+                        </li>
+                        <li class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter7" value="option7">
+                            <label class="form-check-label" for="filter7">
+                                <span><img src="img/bio.svg" alt="Organic food" /></span>
+                                Organic Food
+                            </label>
+                        </li>
+                        <li class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter8" value="option8">
+                            <label class="form-check-label" for="filter8">
+                                <span><img src="img/pet.svg" alt="pet friendly" /></span>
+                                Pet friendly
+                            </label>
+                        </li>
+                        <li class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="filter9" value="option9">
+                            <label class="form-check-label" for="filter9">
+                                <span><img src="img/delivery.svg" alt="Home delivery" /></span>
+                                Home delivery
+                            </label>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="grid-cards">
                     <div class="card-columns">
                         <div class="card">

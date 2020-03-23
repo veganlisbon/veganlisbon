@@ -1,9 +1,100 @@
-.card {
+.food-category {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.food-category header {
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+
+.food-category header .img-background {
+    width: 100%;
+    height: 100%;
+}
+
+.food-category header .img-background::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url("/img/food8.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.food-category header .img-background::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+}
+
+.food-category header h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.food-category .filter-menu {
+    padding: 15px;
+    margin: 50px 0 30px 0;
+    background-color: rgba(48, 226, 62, 0.31);
+    -o-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    border-radius: 1rem;
+}
+
+.food-category .filter-menu p {
+    margin: 0 0 8px 0;
+}
+
+.food-category .filter-wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.food-category .filter-wrapper li {
+    margin-right: 20px;
+}
+
+.food-category .filter-wrapper li input[type="checkbox"] {
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.food-category .filter-wrapper li label {
+    font-size: 12px;
+}
+
+.food-category .filter-wrapper li img {
+    height: 10px;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.food-category .card {
     border: 1px solid rgba(48, 226, 62, 0.31);
     overflow: hidden;
     border-radius: 1rem;
     cursor: pointer;
-
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -13,17 +104,15 @@
     transition-property: box-shadow, transform;
 }
 
-.card:hover {
-    -webkit-box-shadow: 10px 10px 39px -25px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 39px -25px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 39px -25px rgba(0,0,0,0.75);
+.food-category .card:hover {
+    -webkit-box-shadow: 10px 10px 39px -25px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 39px -25px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 39px -25px rgba(0, 0, 0, 0.75);
     -webkit-transform: scale(1.01);
     transform: scale(1.01);
 }
 
-
-
-.card .card-img {
+.food-category .card .card-img {
     width: 100%;
     height: 100%;
     position: relative;
@@ -33,42 +122,42 @@ box-shadow: 10px 10px 39px -25px rgba(0,0,0,0.75);
     transition: all 0.5s ease-in-out;
 }
 
-.card .card-img img {
+.food-category .card .card-img img {
     transition: all 0.5s ease-in-out;
     object-fit: cover;
     position: relative;
 }
 
-.card .card-img img:before {
-    content:'';
+.food-category .card .card-img img:before {
+    content: '';
     width: 100%;
     height: 100%;
     position: absolute;
-    background: rgb(201,174,219);
-    background: linear-gradient(0deg, rgba(201,174,219,1) 0%, rgba(168,255,212,1) 100%);
+    background: rgb(201, 174, 219);
+    background: linear-gradient(0deg, rgba(201, 174, 219, 1) 0%, rgba(168, 255, 212, 1) 100%);
     z-index: 1;
 }
 
-.card-title {
+.food-category .card-title {
     font-family: 'Dancing Script', cursive;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-.card-text {
+.food-category .card-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 200;
     color: #47bf56;
 }
 
-.card:hover .card-body {
+.food-category .card:hover .card-body {
     transition: all 0.5s ease-in-out;
     background-color: rgba(48, 226, 62, 0.31);
 }
 
-.card-icons {
+.food-category .card-icons {
     padding: 0;
     list-style: none;
     margin: 0;
@@ -76,12 +165,12 @@ box-shadow: 10px 10px 39px -25px rgba(0,0,0,0.75);
     margin: 0 -5px;
 }
 
-.card-icons li {
+.food-category .card-icons li {
     height: 15px;
     padding: 0 5px;
 }
 
-.card-icons img {
+.food-category .card-icons img {
     height: 100%;
     display: block;
 }
