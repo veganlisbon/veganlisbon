@@ -1,3 +1,37 @@
+/* General styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input.form-control, select.custom-select, textarea.form-control{
+    border: 1px solid rgba(48, 226, 62, 0.31);
+}
+
+/* Delete Focus from all the inputs */
+input[type="checkbox" i]:focus,
+input:focus {
+    outline-offset: 0px;
+    outline: 0;
+}
+:focus {
+    outline: -webkit-focus-ring-color auto 0;
+    outline: 0;
+    -webkit-tap-highlight-color: 0;
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before,
+.custom-control-input:checked~.custom-control-label::before {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+
 /* Food */
 .food-category {
     font-family: 'Montserrat', sans-serif;
@@ -5,31 +39,31 @@
     font-weight: 400;
 }
 
-/* Food: header */
-.food-category header {
+/* Header of interior pages */
+header.interior-page-title {
     width: 100%;
     height: 250px;
     position: relative;
 }
 
-.food-category header .img-background {
+header.interior-page-title .img-background {
     width: 100%;
     height: 100%;
 }
 
-.food-category header .img-background::before {
+header.interior-page-title .img-background::before {
     content: '';
     width: 100%;
     height: 100%;
     display: block;
-    background-image: url("/img/food8.jpg");
+    background-image: url("img/food8.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
-.food-category header .img-background::after {
+header.interior-page-title .img-background::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -39,7 +73,7 @@
     top: 0;
 }
 
-.food-category header h1 {
+header.interior-page-title h1 {
     width: 100%;
     padding: 0 15px;
     margin: 0;
@@ -248,15 +282,14 @@
 }
 
 .homepage-header h2 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 40px;
-
 }
 
 .homepage-header .col-lg-12 {
     background-color:#D8EDD9;
     opacity: .8;
-    position: sticky;
     top: 10px;
 }
 
@@ -268,7 +301,7 @@
 }
 
 .homepage-nav a {
-    color: #D8EDD9;
+    color: rgb(220, 228, 220);
 }
 
 .homepage-nav a img {
@@ -282,7 +315,8 @@
 }
 
 .homepage-nav a span {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: 3rem;
     width: 100%;
     position: absolute;
@@ -291,52 +325,88 @@
     transform: translate(-50%, -50%);
 }
 
-/* style about-page header */
+/* style general footer */
 
-.about-header {
-        height: 100vh;
-        background-image: url("img/food11.jpg");
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll;
-        opacity: .5;
-}
-
-/* style homepage-footer */
-
-.homepage footer {
-    background-color:#D8EDD9;
+footer {
+    text-align: center;
+    background-color: rgba(48, 226, 62, 0.31);
     font-size: 14px;
     color:#737373;
+    padding: 40px 20px;
+    bottom: 0;
 }
 
-.homepage-footer ul{
+footer ul{
     margin: auto;
     padding: 2px;
 }
 
-.homepage .row{
+footer .row{
     vertical-align: middle;
 }
 
-.homepage-footer img {
+footer img {
     height: 20px;
     width: 20px;
 }
 
-.homepage-footer a {
+footer a {
     color:#1E4427;
 }
 
-.homepage hr {
+footer hr {
     border-top-color:rgb(8, 66, 11);
-    opacity:0.3;
-    margin: 1px;
+    padding: 4px;
 }
 
+/* contact pages */
 
+.checkboxContact, .radioContact{
+    padding-left: 2.5rem;
+}
 
+label{
+    margin-bottom: 0;
+}
 
+.inputContact, .selectContact, #checkboxDiv, #radioDiv{
+    margin-bottom: 1rem;
+}
 
+#other{
+    width: 50%;
+}
 
+#selectAverage, #subject, #checkAllFeatures{
+    margin-bottom: 0.3rem;
+}
 
+#formName p{
+    margin-bottom: 2rem;
+}
+
+#submitButton{
+    margin-top: 1rem;
+    background-color: rgb(8, 66, 11);
+    border-color: rgb(8, 66, 11);
+}
+
+.comments{
+    margin-top: 0.3rem;
+}
+
+.other{
+    margin-top: 0.1rem;
+}
+
+.subject-customer{
+    margin-bottom: 0.1rem;
+}
+
+.textBelowH1{
+    margin-top: 2rem;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: rgb(8, 66, 11);
+}

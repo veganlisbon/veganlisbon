@@ -12,28 +12,37 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="normalize.css">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- css own -->
-    <link rel="stylesheet" href="styleFormCustomer.css">
+    <link rel="stylesheet" href="style.css">
     <!-- script jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- bootstrap script -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <!-- script own -->
-    <script type="text/javascript" src="script.js"></script>   
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+    <header class="interior-page-title">
+      <div class="img-background"></div>
+      <h1>Contact us</h1>
+    </header>
     <form>
       <div class="container">
         <div class="row">
           <div class="col-lg-2"></div>
           <div id="formName" class="col-lg-8">
-            <h1 class="h1 text-center">Contact form - Customers</h1>
-            <p class="text-center">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
+            <p class="text-center textBelowH1">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
           </div>
           <div class="col-lg-2"></div>
         </div>
@@ -41,25 +50,25 @@
           <div class="col-lg-2"></div>
           <div class="col-lg-4 col-md-6">
             <label for="name">Name: </label>
-            <input type="text" name='name' id='name' placeholder="your name" class="form-control form-control-sm">
+            <input type="text" name='name' id='name' placeholder="your name" class="form-control form-control-sm inputContact">
           </div>
           <div class="col-lg-4 col-md-6">
             <label for="email">e-mail: </label>
-            <input type="email" name="email" id="email" placeholder="name@email.com" class="form-control form-control-sm">
+            <input type="email" name="email" id="email" placeholder="name@email.com" class="form-control form-control-sm inputContact">
           </div>
           <div class="col-lg-2"></div>
         </div>
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <p>Subject:</p>
+            <p class="subject-customer">Subject:</p>
           </div>
           <div class="col-lg-2"></div>
         </div>
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <select id="subject" class="custom-select custom-select-sm">
+            <select id="subject" class="custom-select custom-select-sm selectContact">
               <option value="selectSubject" selected disabled>Select the subject</option>
               <option value="suggestion">Suggest a vegan/vegetarian place</option>
               <option value="feedback">Feedback on our suggested places</option>
@@ -72,7 +81,7 @@
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <label for="comments">Comments:</label>
+            <label class="comments" for="comments">Comments:</label>
           </div>
           <div class="col-lg-2"></div>
           <div class="col-lg-2"></div>
