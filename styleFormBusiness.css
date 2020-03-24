@@ -1,5 +1,5 @@
 .checkbox, .radio{
-    padding-left: 2.5rem;;
+    padding-left: 2.5rem;
 }
 
 label{
@@ -10,12 +10,16 @@ input, select, #checkboxDiv, #radioDiv{
     margin-bottom: 1rem;
 }
 
-p {
+#other{
+    width: 50%;
+}
+
+#selectAverage, #subject, #checkAllFeatures{
     margin-bottom: 0.3rem;
 }
 
 #otherFeatures{
-    margin-top: -15px;
+    
 }
 
 #formName p{

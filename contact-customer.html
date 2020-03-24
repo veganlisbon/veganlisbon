@@ -29,28 +29,35 @@
     <form>
       <div class="container">
         <div class="row">
-          <div id="formName" class="col-lg-12">
-            <h1 class="h1">Contact form - Customers</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan a ante a volutpat. Mauris vitae efficitur magna. Integer finibus ornare tortor quis suscipit. Nulla facilisi. Nam semper sapien eu orci gravida, at congue mauris rutrum. </p>
+          <div class="col-lg-2"></div>
+          <div id="formName" class="col-lg-8">
+            <h1 class="h1 text-center">Contact form - Customers</h1>
+            <p class="text-center">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
           </div>
+          <div class="col-lg-2"></div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 col-md-6">
             <label for="name">Name: </label>
             <input type="text" name='name' id='name' placeholder="your name" class="form-control form-control-sm">
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-4 col-md-6">
             <label for="email">e-mail: </label>
             <input type="email" name="email" id="email" placeholder="name@email.com" class="form-control form-control-sm">
           </div>
+          <div class="col-lg-2"></div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
             <p>Subject:</p>
           </div>
+          <div class="col-lg-2"></div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
             <select id="subject" class="custom-select custom-select-sm">
               <option value="selectSubject" selected disabled>Select the subject</option>
               <option value="suggestion">Suggest a vegan/vegetarian place</option>
@@ -59,16 +66,25 @@
               <option value="other">Other</option>
             </select>
           </div>
+          <div class="col-lg-2"></div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
             <label for="comments">Comments:</label>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
             <textarea id="comments" rows="10" cols="70" placeholder="write your message here" class="form-control"></textarea>
           </div>
+          <div class="col-lg-2"></div>
         </div>
-        <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-10">
+          <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
+        </div>
       </div>
     </form>
   </body>
