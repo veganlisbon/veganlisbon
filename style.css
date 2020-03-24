@@ -11,10 +11,12 @@
     height: 250px;
     position: relative;
 }
+
 .food-category header .img-background {
     width: 100%;
     height: 100%;
 }
+
 .food-category header .img-background::before {
     content: '';
     width: 100%;
@@ -26,6 +28,7 @@
     background-position: center;
     background-size: cover;
 }
+
 .food-category header .img-background::after {
     content: '';
     width: 100%;
@@ -35,6 +38,7 @@
     position: absolute;
     top: 0;
 }
+
 .food-category header h1 {
     width: 100%;
     padding: 0 15px;
@@ -63,23 +67,29 @@
     -webkit-border-radius: 1rem;
     border-radius: 1rem;
 }
+
 .food-category .filter-menu p {
     margin: 0 0 8px 0;
 }
+
 .food-category .filter-wrapper {
     padding: 0;
     margin: 0;
 }
+
 .food-category .filter-wrapper li {
     margin: 0 20px 10px 0;
 }
+
 .food-category .filter-wrapper li input[type="checkbox"] {
     border: 1px solid black;
     display: inline-block;
 }
+
 .food-category .filter-wrapper li label {
     font-size: 12px;
 }
+
 .food-category .filter-wrapper li img {
     height: 10px;
     display: inline-block;
@@ -100,6 +110,7 @@
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
 }
+
 .food-category .card:hover {
     -webkit-box-shadow: 10px 10px 39px -25px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 39px -25px rgba(0, 0, 0, 0.75);
@@ -107,6 +118,7 @@
     -webkit-transform: scale(1.01);
     transform: scale(1.01);
 }
+
 .food-category .card .card-img {
     width: 100%;
     height: 100%;
@@ -116,11 +128,13 @@
     border-bottom-left-radius: 0;
     transition: all 0.5s ease-in-out;
 }
+
 .food-category .card .card-img img {
     transition: all 0.5s ease-in-out;
     object-fit: cover;
     position: relative;
 }
+
 .food-category .card .card-img img:before {
     content: '';
     width: 100%;
@@ -130,22 +144,26 @@
     background: linear-gradient(0deg, rgba(201, 174, 219, 1) 0%, rgba(168, 255, 212, 1) 100%);
     z-index: 1;
 }
+
 .food-category .card-title {
     font-family: 'Dancing Script', cursive;
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 5px;
 }
+
 .food-category .card-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: 200;
     color: #47bf56;
 }
+
 .food-category .card:hover .card-body {
     transition: all 0.5s ease-in-out;
     background-color: rgba(48, 226, 62, 0.31);
 }
+
 .food-category .card-icons {
     padding: 0;
     list-style: none;
@@ -153,10 +171,12 @@
     display: flex;
     margin: 0 -5px;
 }
+
 .food-category .card-icons li {
     height: 15px;
     padding: 0 5px;
 }
+
 .food-category .card-icons img {
     height: 100%;
     display: block;
@@ -164,6 +184,7 @@
 
 /* MEDIA QUERIES */
 @media (max-width: 767px) and (min-width: 576px) {
+
     /* Food: cards */
     .food-category .card-columns {
         -webkit-column-count: 2;
@@ -173,9 +194,10 @@
 }
 
 @media (max-width: 576px) {
+
     /* Food: header */
     .food-category header h1 {
-       font-size: 50px;
+        font-size: 50px;
     }
 }
 
@@ -190,7 +212,22 @@
 
 .restaurant-category #restaurant-gallery .carousel-item,
 .restaurant-category #restaurant-gallery .carousel-inner,
-.restaurant-category #restaurant-gallery img  {
+.restaurant-category #restaurant-gallery img {
     height: 100%;
     object-fit: cover;
+}
+
+/* Google maps */
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 300px;
+    width: 600px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 300px;
+    width: 600px;
 }
