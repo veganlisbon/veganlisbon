@@ -181,6 +181,7 @@
 
 
 
+
 /* Restaurant */
 .restaurant-category #restaurant-gallery {
     width: 100%;
@@ -194,3 +195,93 @@
     height: 100%;
     object-fit: cover;
 }
+
+.homepage-header {
+    height: 100vh;
+    background-image: url("img/food11.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: .9;
+}
+
+.homepage-header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+}
+
+.homepage-header h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+
+}
+
+.col-lg-12 {
+    background-color: whitesmoke;
+    opacity: .8;
+    position: sticky;
+    top: 10px;
+}
+
+.homepage-nav{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.homepage-nav a {
+    color:whitesmoke;
+}
+
+.homepage-nav a img {
+    width: 100%;
+    opacity: .9;
+}
+
+.homepage-nav col-lg-3 {
+    position: relative;
+}
+
+.homepage-nav a span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-header {
+        height: 100vh;
+        background-image: url("img/food11.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: .5;
+}
+
+footer {
+    background-color:#26272b;
+    font-size: 14px;
+    color:#737373;
+}
+
+.page-footer img {
+    height: 20px;
+    width: 20px;
+}
+
+.page-footer a {
+    color:whitesmoke;
+}
+
+hr {
+    border-top-color:#bbb;
+    opacity:0.3;
+    margin: 5px;
+}
+
+
+
+
+
+
+
