@@ -411,11 +411,6 @@ header.interior-page-title h1 {
     transition: background-color 0.2s ease-in-out;
 }
 
-
-
-
-/* style homepage header */
-
 /* style homepage header */
 .homepage-header {
     height: 100vh;
@@ -642,12 +637,14 @@ label {
     }
 }
 
+/*increase padding on sticker's homepage when reducing from 4 to 2 columns*/
 @media (max-width: 992px) {
     .homepage-nav .sticker {
         margin-bottom: 40px;
     }
 }
 
+/*reduce image size on smal screen - 1 column */
 @media (max-width: 576px) {
     .homepage-nav a img {
         width: 70%;
