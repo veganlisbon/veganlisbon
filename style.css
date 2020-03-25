@@ -428,7 +428,8 @@ header.interior-page-title h1 {
 
 .homepage-header h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 80px;
+    font-weight: 900;
+    font-size: 90px;
 }
 
 .homepage-header h2 {
@@ -441,6 +442,7 @@ header.interior-page-title h1 {
     background-color: #D8EDD9;
     opacity: .8;
     top: 10px;
+    border-radius: 5%;
 }
 
 /* style homepage nav*/
@@ -458,10 +460,12 @@ header.interior-page-title h1 {
     width: 90%;
     opacity: .9;
     padding-bottom: 5px;
+    border-radius: 50%;
 }
 
-.homepage-nav .col-lg-3 {
+.homepage-nav .sticker {
     position: relative;
+    margin-bottom: auto;
 }
 
 .homepage-nav a span {
@@ -481,12 +485,16 @@ header.interior-page-title h1 {
     font-size: 4rem;
 }
 
+.homepage-nav a img:hover {
+    opacity: 1;
+}
+
 /* style general footer */
 
 footer {
     text-align: center;
     background-color: rgba(48, 226, 62, 0.31);
-    font-size: 14px;
+    font-size: 13px;
     color:#737373;
     padding: 30px 20px;
     bottom: 0;
@@ -602,7 +610,6 @@ label {
 
 
 
-
 /* MEDIA QUERIES */
 
 @media (min-width: 576px) {
@@ -633,4 +640,17 @@ label {
     #menu-restaurant  {
         display: none;
     }
+}
+
+@media (max-width: 992px) {
+    .homepage-nav .sticker {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .homepage-nav a img {
+        width: 70%;
+    }
+    
 }
