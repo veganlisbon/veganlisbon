@@ -320,6 +320,7 @@ header.interior-page-title h1 {
     margin-right: 8px;
 }
 
+
 /* Google maps */
 .restaurant-category .localization .mapouter {
     position: relative;
@@ -415,6 +416,7 @@ header.interior-page-title h1 {
 
 /* style homepage header */
 
+/* style homepage header */
 .homepage-header {
     height: 100vh;
     background-image: url("img/food11.jpg");
@@ -456,7 +458,6 @@ header.interior-page-title h1 {
     width: 90%;
     opacity: .9;
     padding-bottom: 5px;
-    ;
 }
 
 .homepage-nav .col-lg-3 {
@@ -472,6 +473,12 @@ header.interior-page-title h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.homepage-nav a span:hover {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 4rem;
 }
 
 /* style general footer */
