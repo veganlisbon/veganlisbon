@@ -392,7 +392,7 @@ header.interior-page-title h1 {
     display: block;
 }
 
-.restaurant-category .rating button {
+.restaurant-category .rating .generalButton {
     background-color: rgb(8, 66, 11);
     border-color: rgb(8, 66, 11);
     display: inline-block;
@@ -616,11 +616,28 @@ footer hr {
     height: 12px;
 }
 
-#submitButton{
+.buttonContactPages .generalButton{
+    background-color: rgb(8, 66, 11);
+    border-color: rgb(8, 66, 11);
+    display: inline-block;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* #submitButton{
     margin-top: 1rem;
     background-color: rgb(8, 66, 11);
     border-color: rgb(8, 66, 11);
-}
+} */
 
 .custom-control-input:checked~.custom-control-label::before {
     background-color: rgb(8, 66, 11);
