@@ -487,27 +487,50 @@ footer {
     text-align: center;
     background-color: rgba(48, 226, 62, 0.31);
     font-size: 14px;
-    color: #737373;
-    padding: 40px 20px;
+    color:#737373;
+    padding: 30px 20px;
     bottom: 0;
 }
 
 footer ul {
     margin: auto;
-    padding: 2px;
 }
 
 footer .row {
     vertical-align: middle;
+    padding: 3px;
 }
 
 footer img {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
 }
 
-footer a {
-    color: #1E4427;
+footer img:hover {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+footer span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+footer a  {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color:#1E4427;
+}
+
+footer a:hover {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    color:rgb(7, 24, 11);
+}
+
+.footer-copyright p {
+    font-style: italic;
 }
 
 footer hr {
