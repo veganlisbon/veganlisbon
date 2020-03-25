@@ -547,6 +547,10 @@ footer hr {
     padding: 4px;
 }
 
+h6 {
+    color: #346437;
+}
+
 /* style about-page header */
 .about-page .container {
     margin: 40px auto;
