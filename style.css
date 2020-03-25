@@ -415,8 +415,6 @@ header.interior-page-title h1 {
 
 
 /* style homepage header */
-
-/* style homepage header */
 .homepage-header {
     height: 100vh;
     background-image: url("img/food11.jpg");
@@ -544,6 +542,15 @@ footer a:hover {
 footer hr {
     border-top-color: rgb(8, 66, 11);
     padding: 4px;
+}
+
+/* style about-page header */
+.about-page .container {
+    margin: 40px auto;
+}
+
+.about-page p {
+    text-align: justify;
 }
 
 /* contact pages */
