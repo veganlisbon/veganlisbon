@@ -544,58 +544,67 @@ footer hr {
     padding: 4px;
 }
 
-/* contact pages */
+/* CONTACT PAGES */
+#textBelowH1Div{
+    margin: 2rem 0;
+    font-weight: 500;
+}
 
 .checkboxContact,
 .radioContact {
     padding-left: 2.5rem;
 }
 
-label {
-    margin-bottom: 0;
+.labelsForm, #checkAllFeatures{
+    font-weight: 500;
 }
 
-.inputContact,
-.selectContact,
-#checkboxDiv,
-#radioDiv {
-    margin-bottom: 1rem;
+.labelsForm, .other {
+    margin-bottom: 0.2rem;
 }
 
-#other {
-    width: 50%;
+#checkAllFeatures, #selectAverage {
+    margin-bottom: 0.6rem;
 }
 
-#selectAverage,
-#subject,
-#checkAllFeatures {
-    margin-bottom: 0.3rem;
-}
-
-#formName p {
+.nameEmailDiv, .businessDiv, .otherDiv, .radioDiv{
     margin-bottom: 2rem;
 }
 
-#submitButton {
+.nameEmailCustDiv{
+    margin-bottom: 1.5rem;
+}
+
+.nameDiv, .kindOfBusinessDiv {
+    margin-bottom: 1rem;
+}
+
+.subjectOptionsDiv{
+    margin-bottom: 1rem;
+}
+
+.other{
+    margin-top: 0.3rem;
+    font-size: 13px;
+}
+
+.checkboxContact, .radioDiv{
+    font-size: 13px;
+}
+
+#other{
+    width: 60%;
+}
+
+.checkboxContact img{
+    width: 12px;
+    height: 12px;
+}
+
+#submitButton{
     margin-top: 1rem;
     background-color: rgb(8, 66, 11);
     border-color: rgb(8, 66, 11);
-}
-
-.comments {
-    margin-top: 0.3rem;
-}
-
-.other {
-    margin-top: 0.1rem;
-}
-
-.subject-customer {
-    margin-bottom: 0.1rem;
-}
-
-.textBelowH1 {
-    margin-top: 2rem;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
