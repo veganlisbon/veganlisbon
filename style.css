@@ -251,7 +251,7 @@ header.interior-page-title h1 {
     height: 100%;
     object-fit: cover;
 }
-/* style homepage header */
+
 
 /* Google maps */
 .mapouter {
@@ -267,6 +267,8 @@ header.interior-page-title h1 {
     height: 300px;
     width: 600px;
 }
+
+/* style homepage header */
 .homepage-header {
     height: 100vh;
     background-image: url("img/food11.jpg");
@@ -306,8 +308,9 @@ header.interior-page-title h1 {
 
 .homepage-nav a img {
     width: 90%;
-    opacity: .9;
-    padding-bottom: 5px;;
+    opacity: .8;
+    padding-bottom: 5px;
+    opacity: 1;
 }
 
 .homepage-nav .col-lg-3 {
@@ -323,6 +326,12 @@ header.interior-page-title h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.homepage-nav a span:hover {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 4rem;
 }
 
 /* style general footer */
