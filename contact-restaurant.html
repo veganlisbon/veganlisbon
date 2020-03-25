@@ -8,7 +8,7 @@
     the perfect vegan & vegetarian Lisbon guide.">
     <meta name="keywords" content="vegan, vegetarian, veggie, lisbon, lisboa, LX, portugal, ">
     <meta name="author" content="Filipa Marta, Fernanda Abbud, Arnaud Duhé">
-    <title>Vegan Lisbon</title>
+    <title>Contact us - Business - Vegan Lisbon</title>
     <!-- normalize css -->
     <link rel="stylesheet" href="normalize.css">
     <!-- fonts -->
@@ -20,48 +20,39 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- css own -->
     <link rel="stylesheet" href="style.css">
-    <!-- script jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <!-- script own -->
-    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
   <header class="interior-page-title">
     <div class="img-background"></div>
     <h1>Contact us</h1>
   </header>
-  <form>
+  <form id="contactForms">
     <div class="container">
       <div class="row">
         <div class="col-lg-2"></div>
-        <div id="formName" class="col-lg-8">
-          <p class="text-center textBelowH1">If you have a business such as a restaurant, bar, store and sells vegan or vegetarian products, fill in this form so we can add your business to our platform.</p>
+        <div id="textBelowH1Div" class="col-lg-8">
+          <p class="text-center">If you have a business such as a restaurant, bar, store and sells vegan or vegetarian products, fill in this form so we can add your business to our platform.</p>
         </div>
         <div class="col-lg-2"></div>
       </div>
-      <div class="row">
+      <!-- ####### NAME, E-MAIL ####### -->
+      <div class="row nameEmailDiv">
         <div class="col-lg-2"></div>
-        <div class="col-lg-4 col-md-6">
-          <label for="name">Name: </label>
+        <div class="col-lg-4 col-md-6 nameDiv">
+          <label class="labelsForm" for="name">Name: </label>
           <input type="text" name='name' id='name' placeholder="your name" class="form-control form-control-sm inputContact">
         </div>
-        <div class="col-lg-4 col-md-6">
-          <label for="email">e-mail: </label>
+        <div class="col-lg-4 col-md-6 emailDiv">
+          <label class="labelsForm" for="email">e-mail: </label>
           <input type="email" name="email" id="email" placeholder="name@email.com" class="form-control form-control-sm inputContact">
         </div>
         <div class="col-lg-2"></div>
       </div>
-      <div class="row">
+      <!-- ####### KIND OF BUSINESS AND NAME OF BUSINESS ####### -->
+      <div class="row businessDiv">
         <div class="col-lg-2"></div>
-        <div class="col-lg-4 col-md-6">
-          <label for="kindOfBusiness">What kind of business you have?</label>
+        <div class="col-lg-4 col-md-6 kindOfBusinessDiv">
+          <label class="labelsForm" for="kindOfBusiness">What kind of business you have?</label>
           <select id="kindOfBusiness" class="custom-select custom-select-sm selectContact">
             <option value="select" selected disabled>select your business</option>
             <option value="Restaurant">Restaurant</option>
@@ -71,19 +62,20 @@
             <option value="Business">Other</option>
           </select>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <label id="nameBusiness" for="business"> Name of business: </label>
+        <div class="col-lg-4 col-md-6 nameBusinessDiv">
+          <label class="labelsForm" id="nameBusiness" for="business"> Name of business: </label>
           <input type="text" name="business" id="business" placeholder="name of your business" class="form-control form-control-sm inputContact">
         </div>
         <div class="col-lg-2"></div>
       </div>
-      <div class="row">
+      <!-- ####### FEATURES ####### -->
+      <div class="row checkAllFeaturesPDiv">
         <div class="col-lg-2"></div>
         <div class="col-lg-10">
           <p id="checkAllFeatures">Check all the features that applies to your business:</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row checkboxDiv1">
         <div class="col-lg-2"></div>
         <div class="custom-control custom-checkbox col-lg-2 checkboxContact">
           <input type="checkbox" name="vegan" id="vegan" class="custom-control-input inputContact">
@@ -99,31 +91,31 @@
         </div>
         <div class="custom-control custom-checkbox col-lg-2 checkboxContact">
           <input type="checkbox" name="delivery" id="delivery" class="custom-control-input inputContact">
-          <label for="delivery" class="custom-control-label">Home Delivery</label>
+          <label for="delivery" class="custom-control-label"><span><img src="img/delivery.svg" alt="Home delivery" /></span> Home Delivery</label>
         </div>
         <div class="col-lg-2"></div>
       </div>
-      <div class="row">
+      <div class="row checkboxDiv2">
         <div class="col-lg-2"></div>
         <div class="custom-control custom-checkbox col-lg-2 checkboxContact">
           <input type="checkbox" name="organic" id="organic" class="custom-control-input inputContact">
-          <label for="organic" class="custom-control-label">Organic Food</label>
+          <label for="organic" class="custom-control-label"><span><img src="img/bio.svg" alt="Organic food" /></span> Organic Food</label>
         </div>
         <div class="custom-control custom-checkbox col-lg-2 checkboxContact">
           <input type="checkbox" name="wifi" id="wifi" class="custom-control-input inputContact">
-          <label for="wifi" class="custom-control-label">WiFi</label>
+          <label for="wifi" class="custom-control-label"><span><img src="img/wifi.svg" alt="place with wifi" /></span> WiFi</label>
         </div>
         <div class="custom-control custom-checkbox col-lg-2 checkboxContact">
           <input type="checkbox" name="petFriendly" id="petFriendly" class="custom-control-input inputContact">
-          <label for="petFriendly" class="custom-control-label">Pet Friendly</label>
+          <label for="petFriendly" class="custom-control-label"><span><img src="img/pet.svg" alt="pet friendly" /></span> Pet Friendly</label>
         </div>
         <div class="custom-control custom-checkbox col-lg-3 checkboxContact">
           <input type="checkbox" name="laptopFriendly" id="laptopFriendly" class="custom-control-input inputContact">
-          <label for="laptopFriendly" class="custom-control-label">Laptop Friendly</label>
+          <label for="laptopFriendly" class="custom-control-label"><span><img src="img/laptop-friendly.svg" alt="laptop friendly" /></span> Laptop Friendly</label>
         </div>
         <div class="col-lg-1"></div>
       </div>
-      <div class="row">
+      <div class="row otherDiv">
         <div class="col-lg-2"></div>
         <div class="col-lg-8" id="otherFeatures">    
           <label class="other" for="other">Other: </label>
@@ -131,46 +123,42 @@
         </div>
         <div class="col-lg-2"></div>
       </div>
+      <!-- ####### SELECT AVERAGE PRICE ####### -->
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-          <p id="selectAverage selectContact">Select average price range:</p>
+          <p class="labelsForm" id="selectAverage">Select average price range:</p>
         </div>
         <div class="col-lg-2"></div>
       </div>
-      <div class="row" id="radioDiv">
+      <div class="row radioDiv">
         <div class="col-lg-2"></div>
-        <div class="col-lg-4 custom-control custom-radio radioContact">
+        <div class="col-lg-3 custom-control custom-radio radioContact">
           <input type="radio" name="priceRange" id="level1" class="custom-control-input inputContact">
-          <label class="custom-control-label" for="level1">€: up to €7</label>
+          <label class="custom-control-label" for="level1">€: up to €15</label>
         </div>
-        <div class="col-lg-4 custom-control custom-radio radioContact">
+        <div class="col-lg-3 custom-control custom-radio radioContact">
           <input type="radio" name="priceRange" id="level2" class="custom-control-input inputContact">
           <label class="custom-control-label" for="level2">€€: up to €80</label>
         </div>
-        <div class="col-lg-2"></div>
-        <div class="col-lg-2"></div>
         <div class="col-lg-4 custom-control custom-radio radioContact">
           <input type="radio" name="priceRange" id="level3" class="custom-control-input inputContact">
-          <label class="custom-control-label" for="level3">€€€: up to €150</label>
-        </div>
-        <div class="col-lg-4 custom-control custom-radio radioContact">
-          <input type="radio" name="priceRange" id="level4" class="custom-control-input inputContact">
-          <label class="custom-control-label" for="level4">€€€€: above €150</label>
+          <label class="custom-control-label" for="level3">€€€: above €80</label>
         </div>
         <div class="col-lg-2"></div>
       </div>
+      <!-- ####### SUBJECT AND COMMENTS ####### -->
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-          <p id="subject">Subject:</p>
+          <p class="labelsForm" id="subject-p">Subject:</p>
         </div>
         <div class="col-lg-2"></div>
       </div>
-      <div class="row">
+      <div class="row subjectOptionsDiv">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-          <select id="subject" class="custom-select custom-select-sm selectContact">
+          <select id="subject-select" class="custom-select custom-select-sm selectContact">
             <option value="selectSubject" selected disabled>Select the subject</option>
             <option value="add">Add business to Vegan Lisbon</option>
             <option value="update">Update information of your business</option>
@@ -182,7 +170,7 @@
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
-          <label class="comments" for="comments">Comments:</label>
+          <label class="labelsForm" class="comments" for="comments">Comments:</label>
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-2"></div>
@@ -191,6 +179,7 @@
         </div>
         <div class="col-lg-2"></div>
       </div>
+      <!-- ####### SUBMIT BUTTON ####### -->
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-10">
