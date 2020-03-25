@@ -8,7 +8,7 @@
     the perfect vegan & vegetarian Lisbon guide.">
     <meta name="keywords" content="vegan, vegetarian, veggie, lisbon, lisboa, LX, portugal, ">
     <meta name="author" content="Filipa Marta, Fernanda Abbud, Arnaud Duhé">
-    <title>Contact - Customers - Vegan Lisbon</title>
+    <title>Contact us- Customers - Vegan Lisbon</title>
     <!-- normalize css -->
     <link rel="stylesheet" href="normalize.css">
     <!-- fonts -->
@@ -33,42 +33,68 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+  <!-- Menu Bar -->
+  <nav class="menu-bar">
+    <a href="index.html" class="logo">Vegan Lisbon</a>
+    <ul>
+      <li><a href="/food.html">Food</a></li>
+      <li><a href="#">Clothes</a></li>
+      <li><a href="#">Drinks</a></li>
+      <li><a href="#">Events</a></li>
+      <li>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" 
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Drop us a line!
+          </button>
+          <div class="dropdown-menu" >
+            <a class="dropdown-item" href="/contact-restaurant.html">If you are a restaurant</a>
+            <a class="dropdown-item" href="/contact-customer.html">Other Suggestions</a>
+          </div>
+        </div>
+      </li>
+      <li class="lang"><a href="#">PT</a> <span>/</span> <a href="#">EN</a></li>
+    </ul>
+  </nav>
+
     <header class="interior-page-title">
       <div class="img-background"></div>
       <h1>Contact us</h1>
     </header>
-    <form>
+    <form id="contactForms">
       <div class="container">
         <div class="row">
           <div class="col-lg-2"></div>
-          <div id="formName" class="col-lg-8">
-            <p class="text-center textBelowH1">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
+          <div id="textBelowH1Div" class="col-lg-8">
+            <p class="text-center">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
           </div>
           <div class="col-lg-2"></div>
         </div>
-        <div class="row">
+        <!-- ####### NAME, E-MAIL ####### -->
+        <div class="row nameEmailCustDiv">
           <div class="col-lg-2"></div>
-          <div class="col-lg-4 col-md-6">
-            <label for="name">Name: </label>
+          <div class="col-lg-4 col-md-6 nameDiv">
+            <label class="labelsForm" for="name">Name: </label>
             <input type="text" name='name' id='name' placeholder="your name" class="form-control form-control-sm inputContact">
           </div>
-          <div class="col-lg-4 col-md-6">
-            <label for="email">e-mail: </label>
+          <div class="col-lg-4 col-md-6 emailDiv">
+            <label class="labelsForm" for="email">e-mail: </label>
             <input type="email" name="email" id="email" placeholder="name@email.com" class="form-control form-control-sm inputContact">
           </div>
           <div class="col-lg-2"></div>
         </div>
+        <!-- ####### SUBJECT AND COMMENTS ####### -->
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <p class="subject-customer">Subject:</p>
+            <p class="labelsForm">Subject:</p>
           </div>
           <div class="col-lg-2"></div>
         </div>
-        <div class="row">
+        <div class="row subjectOptionsDiv">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <select id="subject" class="custom-select custom-select-sm selectContact">
+            <select class="custom-select custom-select-sm selectContact">
               <option value="selectSubject" selected disabled>Select the subject</option>
               <option value="suggestion">Suggest a vegan/vegetarian place</option>
               <option value="feedback">Feedback on our suggested places</option>
@@ -81,12 +107,12 @@
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <label class="comments" for="comments">Comments:</label>
+            <label class="labelsForm" for="comments">Comments:</label>
           </div>
           <div class="col-lg-2"></div>
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <textarea id="comments" rows="10" cols="70" placeholder="write your message here" class="form-control"></textarea>
+            <textarea id="comments" class="form-control" rows="10" cols="70" placeholder="write your message here"></textarea>
           </div>
           <div class="col-lg-2"></div>
         </div>
