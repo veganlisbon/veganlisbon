@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,34 +41,36 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-2"></div>
-          <div id="formName" class="col-lg-8">
-            <p class="text-center textBelowH1">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
+          <div id="textBelowH1Div" class="col-lg-8">
+            <p class="text-center">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
           </div>
           <div class="col-lg-2"></div>
         </div>
-        <div class="row">
+        <!-- ####### NAME, E-MAIL ####### -->
+        <div class="row nameEmailCustDiv">
           <div class="col-lg-2"></div>
-          <div class="col-lg-4 col-md-6">
-            <label for="name">Name: </label>
+          <div class="col-lg-4 col-md-6 nameDiv">
+            <label class="labelsForm" for="name">Name: </label>
             <input type="text" name='name' id='name' placeholder="your name" class="form-control form-control-sm inputContact">
           </div>
-          <div class="col-lg-4 col-md-6">
-            <label for="email">e-mail: </label>
+          <div class="col-lg-4 col-md-6 emailDiv">
+            <label class="labelsForm" for="email">e-mail: </label>
             <input type="email" name="email" id="email" placeholder="name@email.com" class="form-control form-control-sm inputContact">
           </div>
           <div class="col-lg-2"></div>
         </div>
+        <!-- ####### SUBJECT AND COMMENTS ####### -->
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <p class="subject-customer">Subject:</p>
+            <p class="labelsForm">Subject:</p>
           </div>
           <div class="col-lg-2"></div>
         </div>
-        <div class="row">
+        <div class="row subjectOptionsDiv">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <select id="subject" class="custom-select custom-select-sm selectContact">
+            <select class="custom-select custom-select-sm selectContact">
               <option value="selectSubject" selected disabled>Select the subject</option>
               <option value="suggestion">Suggest a vegan/vegetarian place</option>
               <option value="feedback">Feedback on our suggested places</option>
@@ -81,12 +83,12 @@
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <label class="comments" for="comments">Comments:</label>
+            <label class="labelsForm" for="comments">Comments:</label>
           </div>
           <div class="col-lg-2"></div>
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-            <textarea id="comments" rows="10" cols="70" placeholder="write your message here" class="form-control"></textarea>
+            <textarea id="comments" class="form-control" rows="10" cols="70" placeholder="write your message here"></textarea>
           </div>
           <div class="col-lg-2"></div>
         </div>
