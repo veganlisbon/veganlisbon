@@ -603,8 +603,11 @@ h6 {
 }
 
 /* style about-page header */
-.about-page .content-text {
-    margin: 40px auto;
+.about-page .about-content-text,
+.about-page .about-content-video,
+.about-page .col-6
+{
+    margin: 60px auto;
 }
 
 .about-page .our-story {
