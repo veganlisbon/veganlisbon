@@ -603,8 +603,8 @@ h6 {
 }
 
 /* style about-page header */
-.about-page .about-content-text,
-.about-page .about-content-video,
+.about-content-text,
+.about-content-video,
 .about-page .col-6
 {
     margin: 60px auto;
@@ -612,6 +612,10 @@ h6 {
 
 .about-page .our-story {
     text-align: justify;
+}
+
+.about-content-text span {
+    font-weight: 400;
 }
 
 /* CONTACT PAGES */
