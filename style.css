@@ -550,6 +550,7 @@ footer {
     color: #737373;
     padding: 30px 20px;
     bottom: 0;
+    justify-content: center;
 }
 
 footer ul {
@@ -603,12 +604,24 @@ h6 {
 }
 
 /* style about-page header */
-.about-page .content-text {
-    margin: 40px auto;
+.about-content-text,
+.about-content-video,
+.about-page .col-6
+{
+    margin: 60px auto;
+}
+
+.about-content-text .row,
+.about-content-video .row {
+    justify-content: center;
 }
 
 .about-page .our-story {
     text-align: justify;
+}
+
+.about-content-text span {
+    font-weight: 400;
 }
 
 /* CONTACT PAGES */
@@ -891,9 +904,15 @@ h6 {
 }
 
 /*increase padding on sticker's homepage when reducing from 4 to 2 columns*/
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .homepage-nav .sticker {
         margin-bottom: 40px;
+    }
+    .footer-container .footer-contact-pro,
+    .footer-container .footer-contact-user,
+    .footer-container .footer-about-us,
+    .footer-container .footer-follow-us {
+        margin-bottom: 20px;
     }
 }
 
