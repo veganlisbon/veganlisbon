@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +12,124 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="normalize.css">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- css own -->
     <link rel="stylesheet" href="style.css">
     <!-- script jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- bootstrap script -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <!-- script own -->
     <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body>
-    
+<body class="homepage text-center">
+
+    <!-- header -->
+    <header class="homepage-header">
+        <div class="container h-100 ">
+            <div class="row h-100 align-items-center">
+              <div class="col-lg-12">
+                    <h1>Vegan Lisbon</h1>
+                    <h2>Vegan and Vegetarian Culture</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- nav -->
+    <nav class="homepage-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 sticker">
+                    <a href="food.html"  class="food">
+                        <img src="img/food.png">
+                        <span>food</span>
+                        
+                    </a>
+                </div> 
+                <div class="col-sm-6 col-lg-3 sticker">
+                    <a href="food.html"  class="drinks">
+                        <img src="img/drinks.png">
+                        <span>drinks</span>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 sticker">
+                    <a href="food.html" class="clothes">
+                        <img src="img/clothes.png">
+                        <span>clothes</span>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-lg-3 sticker">
+                    <a href="food.html" class="events">
+                        <img src="img/events.png">
+                        <span>events</span>
+                    </a>                   
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <ul class="footer-contact-pro list-unstyled">
+                                <li><span>Do you have a restaurant ?</span></li>
+                                <li><a href="contact-restaurant.html" title="Go to the contact form">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <ul class="footer-contact-user list-unstyled">
+                                <li><span>Do you have a suggestion ?</span></li>
+                                <li><a href="contact-customer.html" title="Go to the contact form">Contact us</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <ul class="footer-about-us list-unstyled">
+                            <li><span>Want to know more ?</span></li>
+                            <li><a href="about.html" title="Our story">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">   
+                        <ul class="footer-follow-us  list-unstyled">
+                            <li><span>Follow Us</span></li>
+                            <li><ul class="footer-social-media-links mt-1 list-unstyled list-inline">
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/" title="Find us on linkedin" target="_blank"><img src="img/iconfinder_square-linkedin_317725.png"></a></li>
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/" title="Find us on Instagram" target="_blank"><img src="img/iconfinder_instagram_317738.png"></a></li>
+                                    <li class="list-inline-item"><a href="https://www.facebook.com/" title="Find us on Facebook" target="_blank"><img src="img/iconfinder_circle-facebook__317752.png"></a></li>
+                                    <li class="list-inline-item"><a href="https://www.twitter.com/" title="Find us on Twitter" target="_blank"><img src="img/iconfinder_square-twitter_317723.png"></a></li>     
+                                </ul>
+                            </li>  
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+             <ul class="footer-copyright list-unstyled">© 2020 Copyright
+                 <li><p>Fernanda Abbud, Filipa Marta, Arnaud Duhé</p></li>
+                 <li><a href="https://www.wildcodeschool.com/fr-FR/campus/lisbonne" title="Visit Wild Code School" target="_blank"><img src="img/wcs.png">Wildcodeschool.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

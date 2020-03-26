@@ -1,91 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vegan Lisbon is the place for vegan and vegetarian culture in the portuguese capital.
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vegan Lisbon is the place for vegan and vegetarian culture in the portuguese capital.
     We provide the best spots in town for food, drinks and shopping. It’s a digital platform to gather this vegan & vegetarian lovers to be part of this community & culture. We will also show special events, so let’s make it short: 
-    the perfect vegan & vegetarian Lisbon guide.">     
-    <meta name="keywords" content="vegan, vegetarian, veggie, lisbon, lisboa, LX, portugal, ">     
-    <meta name="author" content="Filipa Marta, Fernanda Abbud, Arnaud Duhé">
-    <title>Contact - Customers - Vegan Lisbon</title>
-    <!-- normalize css -->
-    <link rel="stylesheet" href="normalize.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- css own -->
-    <link rel="stylesheet" href="styleFormCustomer.css">
-    <!-- script jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- script own -->
-    <script type="text/javascript" src="script.js"></script>   
+    the perfect vegan & vegetarian Lisbon guide.">
+  <meta name="keywords" content="vegan, vegetarian, veggie, lisbon, lisboa, LX, portugal">
+  <meta name="author" content="Filipa Marta, Fernanda Abbud, Arnaud Duhé">
+  <title>Contact us - Vegan Lisbon</title>
+  <!-- normalize css -->
+  <link rel="stylesheet" href="normalize.css">
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700|Montserrat:100,200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- css own -->
+  <link rel="stylesheet" href="style.css">
+  <!-- script jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- script own -->
+  <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-    <form>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div id="formName" class="col-lg-8">
-            <h1 class="h1 text-center">Contact form - Customers</h1>
-            <p class="text-center">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
-          </div>
-          <div class="col-lg-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-4 col-md-6">
-            <label for="name">Name: </label>
-            <input type="text" name='name' id='name' placeholder="your name" class="form-control form-control-sm">
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <label for="email">e-mail: </label>
-            <input type="email" name="email" id="email" placeholder="name@email.com" class="form-control form-control-sm">
-          </div>
-          <div class="col-lg-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
-            <p>Subject:</p>
-          </div>
-          <div class="col-lg-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
-            <select id="subject" class="custom-select custom-select-sm">
-              <option value="selectSubject" selected disabled>Select the subject</option>
-              <option value="suggestion">Suggest a vegan/vegetarian place</option>
-              <option value="feedback">Feedback on our suggested places</option>
-              <option value="other1">Report an issue on the site</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="col-lg-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
-            <label for="comments">Comments:</label>
-          </div>
-          <div class="col-lg-2"></div>
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
-            <textarea id="comments" rows="10" cols="70" placeholder="write your message here" class="form-control"></textarea>
-          </div>
-          <div class="col-lg-2"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-10">
-          <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
+
+<body class="contact-customers-category">
+  <!-- Menu Bar -->
+  <div class="menu-bar-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nav class="menu-bar">
+            <a href="index.html" class="logo">Vegan Lisbon</a>
+            <ul>
+              <li><a href="food.html">Food</a></li>
+              <li><a href="#">Clothes</a></li>
+              <li><a href="#">Drinks</a></li>
+              <li><a href="#">Events</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Drop us a line!
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="contact-restaurant.html">If you are a restaurant</a>
+                    <a class="dropdown-item" href="contact-customer.html">Other Suggestions</a>
+                  </div>
+                </div>
+              </li>
+              <li class="lang"><a href="#">PT</a> <span>/</span> <a href="#">EN</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </form>
-  </body>
-  </html>
+    </div>
+  </div>
+
+  <header class="interior-page-title">
+    <div class="img-background"></div>
+    <h1>Contact us</h1>
+  </header>
+  <form id="contactForms">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div id="textBelowH1Div" class="col-lg-8">
+          <p class="text-center">Fill in this form and talk to us, we would love to hear your opinion or suggestion!</p>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <!-- ####### NAME, E-MAIL ####### -->
+      <div class="row nameEmailCustDiv">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-4 col-md-6 nameDiv">
+          <label class="labelsForm" for="name">Name: </label>
+          <input type="text" name='name' id='name' placeholder="your name"
+            class="form-control form-control-sm inputContact">
+        </div>
+        <div class="col-lg-4 col-md-6 emailDiv">
+          <label class="labelsForm" for="email">e-mail: </label>
+          <input type="email" name="email" id="email" placeholder="name@email.com"
+            class="form-control form-control-sm inputContact">
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <!-- ####### SUBJECT AND COMMENTS ####### -->
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <p class="labelsForm">Subject:</p>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <div class="row subjectOptionsDiv">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <select class="custom-select custom-select-sm selectContact">
+            <option value="selectSubject" selected disabled>Select the subject</option>
+            <option value="suggestion">Suggest a vegan/vegetarian place</option>
+            <option value="feedback">Feedback on our suggested places</option>
+            <option value="other1">Report an issue on the site</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <label class="labelsForm" for="comments">Comments:</label>
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <textarea id="comments" class="form-control" rows="10" cols="70"
+            placeholder="write your message here"></textarea>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      <div class="row buttonContactPages">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-10">
+          <button class="generalButton">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <ul class="footer-contact-pro list-unstyled">
+                                <li><span>Do you have a restaurant ?</span></li>
+                                <li><a href="contact-restaurant.html" title="Go to the contact form">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <ul class="footer-contact-user list-unstyled">
+                                <li><span>Do you have a suggestion ?</span></li>
+                                <li><a href="contact-customer.html" title="Go to the contact form">Contact us</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <ul class="footer-about-us list-unstyled">
+                            <li><span>Want to know more ?</span></li>
+                            <li><a href="about.html" title="Our story">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">   
+                        <ul class="footer-follow-us  list-unstyled">
+                            <li><span>Follow Us</span></li>
+                            <li><ul class="footer-social-media-links mt-1 list-unstyled list-inline">
+                                    <li class="list-inline-item"><a href="https://www.linkedin.com/" title="Find us on linkedin" target="_blank"><img src="img/iconfinder_square-linkedin_317725.png"></a></li>
+                                    <li class="list-inline-item"><a href="https://www.instagram.com/" title="Find us on Instagram" target="_blank"><img src="img/iconfinder_instagram_317738.png"></a></li>
+                                    <li class="list-inline-item"><a href="https://www.facebook.com/" title="Find us on Facebook" target="_blank"><img src="img/iconfinder_circle-facebook__317752.png"></a></li>
+                                    <li class="list-inline-item"><a href="https://www.twitter.com/" title="Find us on Twitter" target="_blank"><img src="img/iconfinder_square-twitter_317723.png"></a></li>     
+                                </ul>
+                            </li>  
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+             <ul class="footer-copyright list-unstyled">© 2020 Copyright
+                 <li><p>Fernanda Abbud, Filipa Marta, Arnaud Duhé</p></li>
+                 <li><a href="https://www.wildcodeschool.com/fr-FR/campus/lisbonne" title="Visit Wild Code School" target="_blank"><img src="img/wcs.png">Wildcodeschool.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
