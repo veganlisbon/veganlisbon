@@ -612,6 +612,16 @@ h6 {
 }
 
 /* CONTACT PAGES */
+.contact-restaurants-category .interior-page-title .img-background::before {
+    content: '';
+    background-image: url("img/contact-banner.jpg");
+}
+
+.contact-customers-category .interior-page-title .img-background::before {
+    content: '';
+    background-image: url("img/contact-cust-banner.jpg");
+}
+
 #textBelowH1Div {
     margin: 2rem 0;
     font-weight: 500;
