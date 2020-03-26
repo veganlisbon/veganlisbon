@@ -590,7 +590,10 @@ footer a:hover {
     color: rgb(7, 24, 11);
 }
 
-.footer-copyright p {
+.footer-contact-pro span,
+.footer-contact-user span,
+.footer-about-us span,
+.footer-follow-us span {
     font-style: italic;
 }
 
@@ -599,7 +602,11 @@ footer hr {
     padding: 4px;
 }
 
-h6 {
+.footer-copyright {
+    line-height: 30px;
+}
+
+.about-content-text h6 {
     color: #346437;
 }
 
